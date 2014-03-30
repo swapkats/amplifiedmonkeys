@@ -1,0 +1,70 @@
+<!DOCTYPE html5>
+<html>
+<head>
+	<title>Quest Adventure Group</title>
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/2.1.3/normalize.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/styles.css"/>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+</head>
+<body>
+	<div class="logo" alt="embibe">
+		<span>Quest Adventures</span>
+	</div>
+	<video loop muted autoplay>
+	  <source src="background2.mp4" type="video/mp4">
+	</video>
+	<section id="overlay"></section>
+	<section id="aboveFold" data-speed="2">
+		<article class="main-heading">Quest adventures group is a leader in orgainising <br>Team outing packages
+			<br><br> We make every <span style="color:orange;">EXPERIENCE</span> count</article>
+		<div class="above-fold-buttons-holder">
+			<a href="javascript:;" id="showMeMoreBtn">Get me started</a>
+		</div>
+		<div class="overlay"></div>
+	</section>
+	<section id="team">
+		<div class="container">
+			<h3 style="color:orange;font-weight:normal;margin-top:100px">TEAM BUILDING</h3>
+			<p>Outward Bound programs aim to advance the personal growth and social skills of individuals and group putting them across challenging activities in.</p>
+			<h3 style="color:orange;font-weight:normal">ADVENTURE PROGRAM</h3>
+			<p>An adventure is defined as an exciting or unusual experience; it may also be a bold, usually risky undertaking, with uncertain outcomes.</p>
+			<h3 style="color:orange;font-weight:normal">SCHOOL PROGRAM</h3>
+			<p>Teenagers are full of energy and love challenges. We can dare, challenge and test mental skills of children in this age group.</p>
+			<h3 style="color:orange;font-weight:normal">COLLEGE EVENT</h3>
+			<p>Our aim is to provide the events that suppot you achieve goals of the event and build the image of your institution.</p>
+		</div>
+	</section>
+	<section id="overlay2"></section>
+	<section id="contact">
+		<div class="container">
+			<h2 style="text-align:center">Contact us</h2>
+			<form>
+				<div class="row">
+					<input type="text" placeholder="Name">
+				</div>
+				<div class="row">
+					<input type="text" placeholder="Email">
+				</div>
+				<div class="row">
+					<input type="text" placeholder="Mobile">
+				</div>
+				<div class="row">
+					<textarea type="text" placeholder="Message"></textarea>
+				</div>
+				<button>Send Message</button>
+			</form>
+		</div>
+	</section>
+	<section id="overlay3"></section>
+</body>
+</html>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script type="text/javascript">
+	$('#showMeMoreBtn').click(function(e){
+		e.stopPropagation();
+		$('html,body').animate({
+			'scrollTop' : $(window).height()
+		},300)
+	})
+</script>
